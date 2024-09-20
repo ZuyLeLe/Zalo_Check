@@ -204,7 +204,7 @@ class ZaloLoginApp:
                     return self.check_zalo(phone)
                 data = response.toDict()
                 if "zalo_name" in data.keys():
-                    status = data['zalo_name']
+                    status = "data['zalo_name']"
                 else:
                     if data['error_code'] == 216:
                         status = 'Unknown'
@@ -246,7 +246,7 @@ class ZaloLoginApp:
                         tk.END, f"Checked {phone}: {status}\n")
                     self.progress_text.yview(tk.END)  # Auto-scroll to the end
                     self.root.update_idletasks()
-                    time.sleep(2)  # Adjust delay based on API rate limits
+                    time.sleep(1)  # Adjust delay based on API rate limits
             if self.output_path.endswith('.csv'):
                 df.to_csv(self.output_path + '.csv', index=False)
             else:
