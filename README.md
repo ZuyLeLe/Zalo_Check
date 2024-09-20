@@ -50,7 +50,7 @@ If you have opened the website ``chat.zalo.me`` but the extension does not have 
     
 ##Tutorial
 
-[![Watch the video]([(https://github.com/user-attachments/assets/07acd614-2e85-48d9-a48f-26426ffd763a)])
+[(https://github.com/user-attachments/assets/07acd614-2e85-48d9-a48f-26426ffd763a)]
 
 
 
