@@ -62,9 +62,13 @@ The output file will add a column called IsZalo, indicating the Zalo registratio
 |0987654321	|User name |
 |0123456789|	Unknown|
 |1|Not a phone number|
-## Error Handling
-  * If any phone number cannot be checked, the app will retry the request up to 5 times with an exponential backoff. Failed numbers will be marked as 'Timeout' or 'Error'.
-  * Any invalid login details or file issues will be shown in an error dialog.
+
+## Output meaning
+  There will be 4 type of output:
+  * Username: The phone number's Zalo account name.
+  * Unknown: The phone number don't have Zalo or it is hidden from stranger.
+  * Not a phone number: The phone number is not in the correct format.
+  * Have Zalo: The phone number have Zalo but the search is being time out so cannot fetch the username (Can try again after the timeout)
     
 ## Credits
 This project utilizes the [ZaloAPI](https://github.com/Its-VrxxDev/zlapi) developed by [Its-VrxxDev](https://github.com/Its-VrxxDev). 
