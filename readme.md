@@ -54,7 +54,9 @@ The input file should be in CSV or Excel format and must contain a column named 
 | 0987654321       |
 | 0123456789       |
 | 0901234567       |
+
 The output file will add a column called IsZalo, indicating the Zalo registration status:
+
 |Phone	|IsZalo|
 |--------|-------|
 |0987654321	|User name |
