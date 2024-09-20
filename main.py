@@ -204,7 +204,7 @@ class ZaloLoginApp:
                     return self.check_zalo(phone)
                 data = response.toDict()
                 if "zalo_name" in data.keys():
-                    status = "data['zalo_name']"
+                    status = data['zalo_name']
                 else:
                     if data['error_code'] == 216:
                         status = 'Unknown'
