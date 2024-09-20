@@ -47,6 +47,16 @@ If you have opened the website ``chat.zalo.me`` but the extension does not have 
       * Upload a CSV or Excel file that contains a column titled Phone.
       * The app will check the Zalo registration status of each phone number and save the results in a new file (CSV or Excel).
       * During processing, a real-time log of each phone check will appear in the progress box.
+    
+##Tutorial
+
+[(https://github.com/user-attachments/assets/07acd614-2e85-48d9-a48f-26426ffd763a)]
+
+
+
+https://github.com/user-attachments/assets/07acd614-2e85-48d9-a48f-26426ffd763a
+
+
 ## File Format
 The input file should be in CSV or Excel format and must contain a column named ``Phone``. Example:
 | Phone            |
