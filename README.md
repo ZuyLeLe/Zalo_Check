@@ -50,7 +50,12 @@ If you have opened the website ``chat.zalo.me`` but the extension does not have 
     
 ##Tutorial
 
-[![Watch the video](https://i.sstatic.net/Vp2cE.png)]([https://youtu.be/vt5fpE0bzSY](https://drive.google.com/file/d/1pl4moglut7S71i3rJJl067gLffOgrJ3-/view?usp=drive_link))
+[![Watch the video](https://i.sstatic.net/Vp2cE.png)]([
+https://github.com/user-attachments/assets/07acd614-2e85-48d9-a48f-26426ffd763a]))
+
+
+
+https://github.com/user-attachments/assets/07acd614-2e85-48d9-a48f-26426ffd763a
 
 
 ## File Format
