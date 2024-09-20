@@ -196,7 +196,7 @@ class ZaloLoginApp:
         for i in range(retries):
             try:
                 if len(phone) > 10 or len(phone) < 9:
-                    return 'No'
+                    return 'Not a phone number'
                 response = self.bot.fetchPhoneNumber(phone)
                 if response.status_code == 429:
                     retry_after = int(response.headers.get("Retry-After", 60))
@@ -211,7 +211,7 @@ class ZaloLoginApp:
                     elif data['error_code'] == 219:
                         status = 'Not a phone number'
                     else:
-                        status = 'Timeout'
+                        status = 'Have Zalo'
                 self.cache[phone] = status
                 return status
             except Exception:
