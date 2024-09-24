@@ -198,20 +198,18 @@ class ZaloLoginApp:
                 if len(phone) > 10 or len(phone) < 9:
                     return 'Not a phone number'
                 response = self.bot.fetchPhoneNumber(phone)
-                if response.status_code == 429:
-                    retry_after = int(response.headers.get("Retry-After", 60))
-                    time.sleep(retry_after)
-                    return self.check_zalo(phone)
                 data = response.toDict()
+                print(phone)
+                print(data)
                 if "zalo_name" in data.keys():
-                    status = data['zalo_name']
+                    status = 'Yes'
                 else:
-                    if data['error_code'] == 216:
-                        status = 'Unknown'
+                    if data['error_code'] == 216 or data['error_code'] == 212 or data['error_code'] == 210:
+                        status = 'N/A'
                     elif data['error_code'] == 219:
-                        status = 'Not a phone number'
+                        status = 'N/A'
                     else:
-                        status = 'Have Zalo'
+                        status = 'Yes'
                 self.cache[phone] = status
                 return status
             except Exception:
